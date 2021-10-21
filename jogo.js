@@ -1,7 +1,7 @@
 var altura = 0
 var largura = 0
-var vidas = 1
-var tempo = 60
+var vidas = 9999
+var tempo = 60000
 
 var criaMosquitoTempo = 1500
 
@@ -13,13 +13,13 @@ if (nivel === 'facil') {
 	criaMosquitoTempo = 3000
 }else if (nivel === 'normal') {
 	//1500
-	criaMosquitoTempo = 1500
+	criaMosquitoTempo = 6500
 }else if(nivel === 'dificil'){
 	//1000
-	criaMosquitoTempo = 750
+	criaMosquitoTempo = 7750
 }else if (nivel === 'chucknorris') {
 	//750
-	criaMosquitoTempo = 300
+	criaMosquitoTempo = 8300
 }
 
 
@@ -51,7 +51,7 @@ function posicaoRandomica(){
 	if(document.getElementById('mosquito')){
 		document.getElementById('mosquito').remove()
 
-		if(vidas > 5){
+		if(vidas > 8){
 			
 			window.location.href = 'fim_de_jogo.html'
 
